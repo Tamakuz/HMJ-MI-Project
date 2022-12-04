@@ -1,0 +1,40 @@
+.navbar {
+    background-color: #ebedf1;
+}
+
+.brand {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.navbar-toggler-icon {
+    cursor: pointer;
+}
+
+.dropdown-item {
+    padding: 5px 70px 5px 16px;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #0d6efd;
+}
+
+.dropdown-item:hover {
+    color: #0d6efd;
+}
+
+.brand-media i {
+    font-size: 20px;
+}
+
+.brand-media i:hover {
+    color: #0d6efd;
+}
+

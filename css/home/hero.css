@@ -1,0 +1,95 @@
+#hero .container-fluid{
+    height: 100vh;
+    background-color: #ebedf1;
+}
+
+#hero .container {
+    flex-direction: row;
+}
+
+
+
+#hero img {
+    width: 100%;
+}
+
+#hero h4 {
+    color: #47bb8e;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#hero h1 {
+    font-weight: 700;
+}
+
+.col-lg-7 {
+    position: relative;
+}
+
+.info-bars {
+    position: absolute;
+    left: -30px;
+    top: -38px;
+    background-color: tomato;
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.info-bars h5 {
+    font-size: 13px;
+}
+
+.progress-container {
+    width: 165px;
+    height: 30px;
+    gap: 10px;
+}
+
+.logo-progres-container {
+    width: 30px;
+    height: 30px;
+}
+
+.progress-detil h6{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.progress {
+    height: 7px;
+}
+
+.status-progress {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    #hero .container {
+        flex-direction: row;
+    }
+
+    #hero .row {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #hero .container-fluid {
+            height: 100vh;
+            margin-top: 54px;
+        }
+}
+
+@media only screen and (max-width: 576px) {
+
+    #hero .container-fluid {
+        height: 90vh;
+        padding-top: 50px;
+    }
+
+}
+
