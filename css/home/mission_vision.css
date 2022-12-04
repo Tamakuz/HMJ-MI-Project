@@ -1,0 +1,13 @@
+#mission_vision .container-fluid {
+    height: 100vh;
+    background-color: #ebedf1;
+    margin-top: 0;
+}
+
+#mission_vision .title{
+    text-align: center;
+}
+
+#mission_vision li {
+    text-align: left;
+}
