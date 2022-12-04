@@ -1,6 +1,7 @@
 #hero .container-fluid{
     height: 100vh;
     background-color: #ebedf1;
+    margin-top: 54px;
 }
 
 #hero .container {
@@ -31,10 +32,11 @@
     position: absolute;
     left: -30px;
     top: -38px;
-    background-color: tomato;
+    background-color: #fff;
     width: auto;
-    height: 100px;
+    height: auto;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .info-bars h5 {
@@ -68,6 +70,8 @@
 }
 
 @media only screen and (min-width: 992px) {
+    
+
     #hero .container {
         flex-direction: row;
     }
@@ -81,6 +85,7 @@
     #hero .container-fluid {
             height: 100vh;
             margin-top: 54px;
+            padding-top: 25px;
         }
 }
 
@@ -88,8 +93,47 @@
 
     #hero .container-fluid {
         height: 90vh;
-        padding-top: 50px;
+        padding-top: 25px;
     }
 
+    #hero .container {
+        max-width: 100%;
+    }
+
+    #hero .col-lg-7 {
+        padding-bottom: 150px;
+    }
+
+    .info-bars {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #hero .container-fluid {
+            height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    
+    #hero .container-fluid {
+            height: 60vh;
+        }
+    
+    #hero h4 {
+        color: #47bb8e;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    #hero h1 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    #hero p {
+        font-size: 10px;
+    }
 }
 
