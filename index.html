@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/home/navbar.css" />
   <link rel="stylesheet" href="css/home/home.css" />
   <link rel="stylesheet" href="css/home/hero.css" />
   <link rel="stylesheet" href="css/home/mission_vision.css" />
+  <link rel="stylesheet" href="css/home/stuktur.css">
   <title>HMJ MI</title>
 </head>
 
@@ -98,7 +100,7 @@
                 <h5>In Politama</h5>
                 <div class="d-flex progress-container" data-aos="zoom-in" data-aos-delay="1400">
                   <div class="logo-progres-container">
-                    <img src="img/book.png" alt="" />
+                    <img src="img/book.png" class="img-fluid" alt="" />
                   </div>
                   <div class="progress-detil w-100">
                     <h6>Teori</h6>
@@ -106,11 +108,11 @@
                       <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 30%"></div>
                     </div>
                   </div>
-                  <span class="status-progress">300%</span>
+                  <span class="status-progress">30%</span>
                 </div>
                 <div class="d-flex progress-container" data-aos="zoom-in" data-aos-delay="1800">
                   <div class="logo-progres-container">
-                    <img src="img/computer.png" alt="" />
+                    <img src="img/computer.png" class="img-fluid" alt="" />
                   </div>
                   <div class="progress-detil w-100">
                     <h6>Praktek</h6>
@@ -122,215 +124,185 @@
                 </div>
               </div>
             </div>
-            <img src="img/hero.jpg" alt="" class="rounded-5" data-aos="zoom-in" data-aos-delay="500" />
+            <img src="img/hero.jpg" alt="" class="rounded-5 img-fluid" data-aos="zoom-in" data-aos-delay="500" />
           </div>
         </div>
       </div>
     </section>
+
+
     <section id="mission_vision">
-      <div class="container-fluid">
-        <div class="container mb-5">
-          <h1 class="title">Vision and Mission</h1>
-        </div>
-        <div class="container overflow-hidden px-4 text-center">
-          <div class="row gx-5">
-            <div class="col">
-              <div class="p-3 bg-transparent">
-                <h3>Vision</h3>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Meningkatkan minat membaca para remaja melalui buku novel.
-                  </li>
-                  <li><i class="ri-check-double-line"></i> Menyediakan lapak untuk mereka yang ingin menjual novel
-                    mereka.
-                  </li>
-                  <li><i class="ri-check-double-line"></i> Mempermudah pelanggan untuk membeli buku novel secara online.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col">
-              <div class="p-3 bg-transparent">
-                <h3>Mission</h3>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Meningkatkan minat membaca para remaja melalui buku novel.
-                  </li>
-                  <li><i class="ri-check-double-line"></i> Menyediakan lapak untuk mereka yang ingin menjual novel
-                    mereka.
-                  </li>
-                  <li><i class="ri-check-double-line"></i> Mempermudah pelanggan untuk membeli buku novel secara online.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="mission_vision">
-      <div class="container-fluid">
-        <div class="container mb-5">
-          <h1 class="title">Organitation Structure</h1>
+      <div class="container-fluid d-flex flex-column justify-content-center">
+        <div class="container mb-4">
+          <h1 class="title text-center">VISION AND MISSION</h1>
+          <p class="title text-center">Caption Vision Misiion Di Sini</p>
         </div>
         <div class="container px-4 text-center">
-          <div class="rounded-3" style="width:100%; height:400px;" id="tree" />
+          <div class="row gx-5">
+            <div class="col px-2">
+              <div class="bg-light shadow rounded-5 p-3">
+                <div class="icon bg-primary m-auto">
+                  <i class="bi bi-bullseye text-light"></i>
+                </div>
+                <h3 class="my-3">Vision</h3>
+                <p class="text-start px-3"><i class="bi bi-caret-right-fill"></i>Meningkatkan minat membaca para remaja
+                  melalui buku novel.</p>
+                <p class="text-start px-3"><i class="bi bi-caret-right-fill"></i>Menyediakan lapak untuk mereka yang
+                  ingin menjual novel mereka.</p>
+                <p class="text-start px-3"><i class="bi bi-caret-right-fill"></i>Mempermudah pelanggan untuk membeli
+                  buku novel secara online.</p>
+              </div>
+            </div>
+            <div class="col px-2">
+              <div class="bg-light shadow rounded-5 p-3">
+                <div class="icon bg-primary m-auto">
+                  <i class="bi bi-eye-fill text-light"></i>
+                </div>
+                <h3 class="my-3">Vision</h3>
+                <p class="text-start px-3"><i class="bi bi-caret-right-fill"></i>Meningkatkan minat membaca para remaja
+                  melalui buku novel.</p>
+                <p class="text-start px-3"><i class="bi bi-caret-right-fill"></i>Menyediakan lapak untuk mereka yang
+                  ingin menjual novel mereka.</p>
+                <p class="text-start px-3"><i class="bi bi-caret-right-fill"></i>Mempermudah pelanggan untuk membeli
+                  buku novel secara online.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section id="struktur-organisasi">
+      <div class="container-fluid d-flex flex-column justify-content-center">
+        <div class="container">
+          <h1 class="title text-center">STRUKTUR ORGANISASI</h1>
+          <p class="title text-center">Caption Vision Misiion Di Sini</p>
+        </div>
+        <div class="container position-relative d-flex">
+          <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="card shadow swiper-slide" style="width: calc(100% / 3);">
+              <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                <img src="img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Ketua Umum PDIP</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+            <div class="card swiper-slide" style="width: calc(100% / 3);">
+              <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                <img src="img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Ketua Umum PDIP</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+            <div class="card swiper-slide" style="width: calc(100% / 3);">
+              <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                <img src="img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Ketua Umum PDIP</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+            <div class="card swiper-slide" style="width: calc(100% / 3);">
+              <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                <img src="img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Ketua Umum PDIP</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+            <div class="card swiper-slide" style="width: calc(100% / 3);">
+              <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                <img src="img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Ketua Umum PDIP</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+            <div class="card swiper-slide" style="width: calc(100% / 3);">
+              <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                <img src="img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-center">Ketua Umum PDIP</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+          <div class="icon-slider-right shadow bg-primary"><i class=" bi bi-chevron-right"></i></div>
+          <div class="icon-slider-left shadow bg-primary"><i class=" bi bi-chevron-left"></i></div>
       </div>
+    </div>
     </section>
   </main>
-
+  
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <div>
-    <!-- Footer -->
-    <footer class="text-center text-lg-start text-white" style="background-color: #3d58ff">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                Company name
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
-              </p>
-            </div>
-            <!-- Grid column -->
 
-            <hr class="w-100 clearfix d-md-none" />
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-              <p>
-                <a class="text-white">MDBootstrap</a>
-              </p>
-              <p>
-                <a class="text-white">MDWordPress</a>
-              </p>
-              <p>
-                <a class="text-white">BrandFlow</a>
-              </p>
-              <p>
-                <a class="text-white">Bootstrap Angular</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <hr class="w-100 clearfix d-md-none" />
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">
-                Useful links
-              </h6>
-              <p>
-                <a class="text-white">Your Account</a>
-              </p>
-              <p>
-                <a class="text-white">Become an Affiliate</a>
-              </p>
-              <p>
-                <a class="text-white">Shipping Rates</a>
-              </p>
-              <p>
-                <a class="text-white">Help</a>
-              </p>
-            </div>
-
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none" />
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-
-        <hr class="my-3">
-
-        <!-- Section: Copyright -->
-        <section class="p-3 pt-0">
-          <div class="row d-flex align-items-center">
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8 text-center text-md-start">
-              <!-- Copyright -->
-              <div class="p-3">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-              </div>
-              <!-- Copyright -->
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-              <!-- Facebook -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                  class="fab fa-facebook-f"></i></a>
-
-              <!-- Twitter -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                  class="fab fa-twitter"></i></a>
-
-              <!-- Google -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                  class="fab fa-google"></i></a>
-
-              <!-- Instagram -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
-                  class="fab fa-instagram"></i></a>
-            </div>
-            <!-- Grid column -->
-          </div>
-        </section>
-        <!-- Section: Copyright -->
-      </div>
-      <!-- Grid container -->
-    </footer>
-    <!-- Footer -->
-  </div>
-  <!-- End of .container -->
 
   <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
     AOS.init({
       once: true
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      loop: true,
+      grabCursor: 'true',
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".bi-chevron-right",
+        prevEl: ".bi-chevron-left",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        626: {
+          slidesPerView: 2,
+        },
+        921: {
+          slidesPerView: 3,
+        },
+      },
     });
   </script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="orgchart/orgchart.js"></script>
-  <script type="module">
-    var chart = new OrgChart(document.getElementById("tree"), {
-      template: "olivia",
-      mouseScrool: OrgChart.action.none,
-      enableSearch: false,
-      nodeBinding: {
-        field_0: "name",
-        field_1: "title",
-        img_0: "img"
-      },
-      nodes: [
-        { id: 1, name: "Amber McKenzie", title: "CEO", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
-        { id: 2, pid: 1, name: "Ava Field", title: "IT Manager", img: "https://cdn.balkan.app/shared/empty-img-none.svg" },
-        { id: 3, pid: 1, name: "Rhys Harper", img: "https://cdn.balkan.app/shared/empty-img-none.svg" }
-      ]
-    });
-  </script>
 </body>
 
 </html>

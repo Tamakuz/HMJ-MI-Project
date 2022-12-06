@@ -1,13 +1,77 @@
 #mission_vision .container-fluid {
-    height: 100vh;
-    background-color: #ebedf1;
-    margin-top: 0;
+    height: 90vh;
+    background-color: #ebebeb;
+}
+
+#mission_vision .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 #mission_vision .title{
-    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 5px grey;
+    line-height: 20px;
 }
 
-#mission_vision li {
-    text-align: left;
+#mission_vision h3 {
+    font-weight: bold;
+}
+
+#mission_vision i {
+    width: 40px;
+    height: 40px;
+}
+
+#mission_vision .bi-bullseye {
+    font-size: 40px;
+    border-radius: 50%;
+}
+
+#mission_vision .bi-eye-fill {
+    font-size: 40px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 660px) {
+    #mission_vision .container-fluid {
+            height: 100vh;
+        }
+
+
+    #mission_vision .row {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mission_vision .col {
+        width: 350px;
+        height: 200px;
+    }
+
+    #mission_vision .text-start {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    #mission_vision .icon {
+        width: 45px;
+        height: auto;
+    }
+
+    #mission_vision .bi-bullseye {
+        font-size: 30px;
+    }
+
+    #mission_vision .bi-eye-fill {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #mission_vision .container-fluid {
+        height: 120vh;
+    }
 }

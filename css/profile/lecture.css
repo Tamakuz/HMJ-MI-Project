@@ -1,0 +1,11 @@
+.modal-body .card-img {
+    width: 200px;
+    height: 200px;
+}
+
+.modal-body .card-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 5px #0d6efd;
+}

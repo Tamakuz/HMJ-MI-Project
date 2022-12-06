@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +10,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../css/home/navbar.css" />
-    <link rel="stylesheet" href="../css/profile/index.css">
+    <link rel="stylesheet" href="../css/profile/lecture.css">
     <title>HMJ MI</title>
 </head>
 
@@ -34,12 +33,12 @@
                                 Profil
                             </a>
                             <ul class="dropdown-menu bg-light shadow border-0 rounded-3 my-2">
-                                <li><a class="dropdown-item" href="#">Dosen</a></li>
+                                <li><a class="dropdown-item" href="#">Profil Dosen</a></li>
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="student.html">Mahasiswa <br />
+                                    <a class="dropdown-item" href="student.html">Profil Mahasiswa <br />
                                         Aktif</a>
                                 </li>
                                 <li>
@@ -80,183 +79,62 @@
         <section>
             <!-- For demo purpose -->
             <div class="container pt-5 pb-4 mt-5">
-                <div class="row text-center text-white">
+                <div class="row text-center text-black">
                     <div class="col-lg-8 mx-auto">
-                        <h1 class="display-4 title">Profile Dosen</h1>
+                        <h1 class="title" style="font-weight: 700;">PROFILE DOSEN</h1>
                     </div>
                 </div>
             </div><!-- End -->
+        </section>
 
-            <div class="container">
-                <div class="row text-center">
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
+        <section>
+            <div class="container-fluid bg-warning">
+                <div class="container bg-success">
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>NIM</th>
+                                <th>NAMA</th>
+                                <th>INFO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>#</th>
+                                <th>22141002</th>
+                                <th>Jovan PAnji Pratama</th>
+                                <th><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</button></th>
+                            </tr>
+                        </tbody>
+                        <tbody id="data-dosen">
+                            
+                        </tbody>
+                    </table>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Profile Dosen</h1>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <div class="card swiper-slide" style="width: 70%;">
+                                        <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                                            <img src="../img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
+                                            <p class="card-text">Nim    : </p>
+                                            <p class="card-text">Nama   : </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
-                    <!-- Team item -->
-                    <div class="col-xl-3 col-sm-6 mb-4 xard">
-                        <div class="bg-white rounded shadow-sm py-5 px-4"><img
-                                src="https://bootstrapious.com/i/snippets/sn-team/teacher-2.jpg" alt="" width="100"
-                                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO -
-                                Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item"><a href="#" class="social-link"><i
-                                            class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div><!-- End -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -264,11 +142,48 @@
 
     <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
+
+    <script>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyB8v7ecpBIo7kRZjqjkejker5nVqgoyEVE",
+                authDomain: "hmj-mi-project.firebaseapp.com",
+                projectId: "hmj-mi-project",
+                storageBucket: "hmj-mi-project.appspot.com",
+                messagingSenderId: "469988837084",
+                appId: "1:469988837084:web:8139f1aab5591cb5271619",
+                measurementId: "G-7X1W0FV6G3"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+
+            const db = firebase.firestore();
+            
+            
+
+            async function getData() {
+                
+                
+                const dosen = await db.collection("dosen").get();
+                dosen.docs.forEach((dsn, i) => {
+                    
+                    // console.log(dsn.id)
+                    document.getElementById('data-dosen').innerHTML += `
+                    <tr>
+                        <th>${dsn.id}</th>
+                        <th class="test-nim" id="nim-data">${dsn.data().nim}</th>
+                        <th class="test-nama" id="nama-data">${dsn.data().nama}</th>
+                        <th><button onClick="clicked()" class="btn btn-primary" id="data-detil" data-bs-toggle="" data-bs-target="#exampleModal">View More</button></th>
+                    </tr>
+                    `
+                });
+                
+            };
+            getData();
+    </script>
 </body>
 
 </html>

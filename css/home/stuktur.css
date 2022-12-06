@@ -1,0 +1,81 @@
+#struktur-organisasi .container-fluid {
+    height: 80vh;
+    background-color: #ebedf1;
+}
+
+#struktur-organisasi .title {
+    font-weight: bold;
+    text-shadow: 0 0 5px grey;
+    line-height: 20px;
+}
+
+#struktur-organisasi .container {
+    height: auto;
+}
+
+#struktur-organisasi .icon-slider-right {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 45%;
+    right: -10px;
+    color: #fff;
+    z-index: 1;
+}
+
+#struktur-organisasi .icon-slider-left {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 45%;
+    left: -10px;
+    color: #fff;
+    z-index: 1;
+}
+
+
+
+#struktur-organisasi .card {
+    height: 90%;
+}
+
+#struktur-organisasi .card-img {
+    width: 200px;
+    height: 200px;
+}
+
+#struktur-organisasi .card-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 5px #0d6efd;
+}
+
+#struktur-organisasi .d-flex {
+    gap: 20px;
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 570px) {
+    #struktur-organisasi .icon-slider-right {
+        display: none;
+    }
+
+    #struktur-organisasi .icon-slider-left {
+        display: none;
+    }
+}
