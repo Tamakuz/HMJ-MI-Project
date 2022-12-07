@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,26 +34,35 @@
                                 Profil
                             </a>
                             <ul class="dropdown-menu bg-light shadow border-0 rounded-3 my-2">
-                                <li><a class="dropdown-item" href="#">Profil Dosen</a></li>
+                                <li><a class="dropdown-item" href="organitation_structure.html">Struktur
+                                        Organisasi
+                                        HMJ</a></li>
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="student.html">Profil Mahasiswa <br />
-                                        Aktif</a>
+                                    <a class="dropdown-item" href="#">Profil Dosen</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="alumni.html">Alumni</a>
+                                    <a class="dropdown-item" href="hmj_manager.html">Profil Pengurus HMJ</a>
+                                </li>
+                                <hr class="dropdown-divider" />
+                                <li>
+                                    <a class="dropdown-item" href="student.html">Profil Mahasiswa</a>
+                                </li>
+                                <hr class="dropdown-divider" />
+                                <li>
+                                    <a class="dropdown-item" href="graduate.html">Profil Alumni</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown px-3">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Progam
+                                Program Kerja
                             </a>
                             <ul class="dropdown-menu bg-light shadow border-0 rounded-3 my-2">
                                 <li><a class="dropdown-item" href="#">Design Grapic</a></li>
@@ -61,6 +71,24 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">Sosial Media</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="news.html">Berita</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Karya Mahasiswa
+                            </a>
+                            <ul class="dropdown-menu bg-light shadow border-0 rounded-3 my-2">
+                                <li><a class="dropdown-item" href="#">Karya</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Tugas Akhir</a>
                                 </li>
                             </ul>
                         </li>
@@ -74,7 +102,6 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section>
             <!-- For demo purpose -->
@@ -99,42 +126,10 @@
                                 <th>INFO</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <th>#</th>
-                                <th>22141002</th>
-                                <th>Jovan PAnji Pratama</th>
-                                <th><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View More</button></th>
-                            </tr>
-                        </tbody>
                         <tbody id="data-dosen">
-                            
+
                         </tbody>
                     </table>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Profile Dosen</h1>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <div class="card swiper-slide" style="width: 70%;">
-                                        <div class="card-img m-auto d-flex justify-content-center align-items-center">
-                                            <img src="../img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
-                                            <p class="card-text">Nim    : </p>
-                                            <p class="card-text">Nama   : </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -148,41 +143,73 @@
 
     <script>
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            const firebaseConfig = {
-                apiKey: "AIzaSyB8v7ecpBIo7kRZjqjkejker5nVqgoyEVE",
-                authDomain: "hmj-mi-project.firebaseapp.com",
-                projectId: "hmj-mi-project",
-                storageBucket: "hmj-mi-project.appspot.com",
-                messagingSenderId: "469988837084",
-                appId: "1:469988837084:web:8139f1aab5591cb5271619",
-                measurementId: "G-7X1W0FV6G3"
-            };
+        const firebaseConfig = {
+            apiKey: "AIzaSyB8v7ecpBIo7kRZjqjkejker5nVqgoyEVE",
+            authDomain: "hmj-mi-project.firebaseapp.com",
+            projectId: "hmj-mi-project",
+            storageBucket: "hmj-mi-project.appspot.com",
+            messagingSenderId: "469988837084",
+            appId: "1:469988837084:web:8139f1aab5591cb5271619",
+            measurementId: "G-7X1W0FV6G3"
+        };
 
-            firebase.initializeApp(firebaseConfig);
+        firebase.initializeApp(firebaseConfig);
 
-            const db = firebase.firestore();
-            
-            
+        const db = firebase.firestore();
 
-            async function getData() {
-                
-                
-                const dosen = await db.collection("dosen").get();
-                dosen.docs.forEach((dsn, i) => {
-                    
-                    // console.log(dsn.id)
-                    document.getElementById('data-dosen').innerHTML += `
+
+
+        async function getData() {
+
+
+            const dosen = await db.collection("dosen").get();
+
+            dosen.docs.forEach((dsn, i) => {
+                document.getElementById('data-dosen').innerHTML += `
+                     <div class="modal fade" id="staticBackdrop${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Profile Dosen</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <div class="card swiper-slide" style="width: 70%;">
+                                        <div class="card-img m-auto d-flex justify-content-center align-items-center">
+                                            <img src="../img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
+                                            <p class="card-text">Nim    : ${dsn.data().nim}</p>
+                                            <p class="card-text">Nama   : ${dsn.data().nama}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+
+                document.getElementById('data-dosen').innerHTML += `
                     <tr>
                         <th>${dsn.id}</th>
                         <th class="test-nim" id="nim-data">${dsn.data().nim}</th>
                         <th class="test-nama" id="nama-data">${dsn.data().nama}</th>
-                        <th><button onClick="clicked()" class="btn btn-primary" id="data-detil" data-bs-toggle="" data-bs-target="#exampleModal">View More</button></th>
+                        <th>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop${i}">
+                                view more
+                            </button>
+                        </th>
                     </tr>
-                    `
-                });
-                
-            };
-            getData();
+                `
+            });
+
+        };
+        getData();
     </script>
 </body>
 
