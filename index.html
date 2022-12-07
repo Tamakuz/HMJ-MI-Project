@@ -79,7 +79,7 @@
               </ul>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="profile/news.html">Berita</a>
+              <a class="nav-link" href="#">Berita</a>
             </li>
             <li class="nav-item dropdown px-3">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -250,6 +250,44 @@
 
   <script src="node_modules/aos/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      loop: true,
+      grabCursor: 'true',
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".bi-chevron-right",
+        prevEl: ".bi-chevron-left",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        626: {
+          slidesPerView: 2,
+        },
+        921: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="orgchart/orgchart.js"></script>
