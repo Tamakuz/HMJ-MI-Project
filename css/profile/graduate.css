@@ -23,7 +23,7 @@ body {
 }
 
 .dash i {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .modal-body .card-img {
@@ -60,4 +60,8 @@ footer p {
     .dash p{
         font-size: 10px;
     }
+
+    .dash i {
+    font-size: 20px;
+}
 }

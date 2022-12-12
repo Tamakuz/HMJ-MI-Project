@@ -23,7 +23,7 @@ body {
 }
 
 .dash i {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .modal-body .card-img {
@@ -47,6 +47,16 @@ footer p {
     font-size: 12px;
 }
 
+.text-nav {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.dropdown-nav-mhs {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .dash {
         gap: 0;
@@ -59,5 +69,17 @@ footer p {
     }
     .dash p{
         font-size: 10px;
+    }
+
+    .dash i {
+    font-size: 20px;
+}
+
+    .dropdown-nav-mhs {
+    display: block;
+    }
+
+    .nav-mhs {
+        display: none;
     }
 }
