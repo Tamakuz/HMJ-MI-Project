@@ -39,6 +39,7 @@
                                             <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
                                             <p class="card-text">Nim    : ${mhs.data().nim}</p>
                                             <p class="card-text">Nama   : ${mhs.data().nama}</p>
+                                            <p class="card-text">Jenis Kelamin   : ${mhs.data().kelamin}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +78,7 @@
 
     // TOTAL MAHASISWA LAKI-LAKI
     function mhsLaki() {
-      db.collection('semester3').where('kelamin', 'in', ['laki']).get().then(querySnapshot => {
+      db.collection('semester3').where('kelamin', 'in', ['Laki - laki']).get().then(querySnapshot => {
         document.getElementById('totalMhsLaki').innerHTML = querySnapshot.size;
       })
     }

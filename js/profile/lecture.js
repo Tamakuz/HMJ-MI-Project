@@ -35,6 +35,7 @@
                           <div class="card-body">
                               <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
                               <p class="card-text">Nama   : ${dsn.data().nama}</p>
+                              <p class="card-text">Jenis Kelamin   : ${dsn.data().kelamin}</p>
                           </div>
                         </div>
                       </div>
@@ -76,7 +77,7 @@
 
     // TOTAL DOSEN LAKI-LAKI
     function dosenLaki() {
-      db.collection('dosen').where('kelamin', 'in', ['laki']).get().then(querySnapshot => {
+      db.collection('dosen').where('kelamin', 'in', ['Laki - laki']).get().then(querySnapshot => {
         document.getElementById('totalLaki').innerHTML = querySnapshot.size;
       })
     }
@@ -84,7 +85,7 @@
 
     // TOTAL DOSEN PEREMPUAN
     function dosenPerempuan() {
-      db.collection('dosen').where('kelamin', 'in', ['perempuan']).get().then(querySnapshot => {
+      db.collection('dosen').where('kelamin', 'in', ['Perempuan']).get().then(querySnapshot => {
         document.getElementById('totalPerempuan').innerHTML = querySnapshot.size;
       })
     }
