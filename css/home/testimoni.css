@@ -1,0 +1,223 @@
+#testimoni .container-fluid {
+  height: 70vh;
+  overflow: hidden;
+  background-color: rgb(50, 50, 50);
+}
+
+#testimoni .title-top {
+  height: 70vh;
+}
+
+#testimoni .title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#testimoni .row p {
+  color: #a9a4bc;
+}
+
+#testimoni .row a{
+  width: 230px;
+  height: 45px;
+  font-weight: bold;
+}
+
+#testimoni .page-one {
+  position: relative;
+  animation: moveUp 20s ease-in-out infinite;
+}
+
+@keyframes moveUp {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -150px;
+  }
+  75%{
+    top: 20px;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+#testimoni .page-two {
+  position: relative;
+  animation: moveDown 20s ease infinite;
+}
+
+@keyframes moveDown {
+  0% {
+    top: 0;
+  }
+  25%{
+    top: -100px;
+  }
+  75%{
+    top: 50px;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+
+#testimoni .title-card-body {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#testimoni .img-profil-testimoni{
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  background-position: center;
+}
+
+#testimoni .detil-img-testimoni {
+  font-size: 12px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+#testimoni .detil-img-testimoni:nth-child(1){
+  font-weight: bold;
+}
+
+#testimoni .detil-img-testimoni:nth-child(2){
+  color: rgb(168, 168, 168);
+}
+
+
+@media only screen and (max-width: 992px) {
+  #testimoni .container-fluid {
+  height: auto;
+  overflow: hidden;
+  background-color: rgb(50, 50, 50);
+  }
+
+  .container-content-testimoni {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #testimoni .title-top {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #testimoni .container-testimoni-feed {
+    width: 100vw;
+    padding-bottom: 30px;
+    position: relative;
+    animation: moveRigth 30s ease-in-out infinite;
+  }
+
+  #testimoni .card-body {
+    width: 350px;
+  }
+
+  #testimoni .page-one {
+    display: flex;
+  }
+
+  #testimoni .page-two {
+    display: flex;
+  }
+
+  #testimoni .page-one {
+  position: relative;
+  animation: none;
+  }
+
+  #testimoni .page-two {
+  position: relative;
+  animation: none;
+  }
+
+
+  @keyframes moveRigth {
+    0% {
+      right: 0;
+    }
+    25% {
+      right: -250px;
+    }
+    75%{
+      right: 300px;
+    }
+    100%{
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    #testimoni .container-testimoni-feed {
+    position: relative;
+    animation: moveRigth 50s ease-in-out infinite;
+  }
+
+    #testimoni .page-one {
+  position: relative;
+  animation: none;
+  }
+
+  #testimoni .page-two {
+  position: relative;
+  animation: none;
+  }
+
+  @keyframes moveRigth {
+    0% {
+      right: 0;
+    }
+    25% {
+      right: -350px;
+    }
+    75%{
+      right: 810px;
+    }
+    100%{
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+    #testimoni .container-testimoni-feed {
+    position: relative;
+    animation: moveRigth 80s ease-in-out infinite;
+  }
+
+    #testimoni .page-one {
+  position: relative;
+  animation: none;
+  }
+
+  #testimoni .page-two {
+  position: relative;
+  animation: none;
+  }
+
+  @keyframes moveRigth {
+    0% {
+      right: 0;
+    }
+    25% {
+      right: -920px;
+    }
+    75%{
+      right: 1000px;
+    }
+    100%{
+      right: 0;
+    }
+  }
+}
