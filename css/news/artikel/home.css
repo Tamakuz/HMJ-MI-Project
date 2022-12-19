@@ -1,0 +1,8 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#comment {
+    height: 150px;
+    resize: none;
+}
