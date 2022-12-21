@@ -12,15 +12,17 @@
     firebase.initializeApp(firebaseConfig);
 
     const db = firebase.firestore();
+    const storage = firebase.storage();
 
 
 
     async function getData() {
-
-
       const dosen = await db.collection("alumni").get();
-
       dosen.docs.forEach((mhs, i) => {
+        const storageRef = storage.ref().child(`alumni/${mhs.data().nama}.jpg`);
+          storageRef.getDownloadURL().then((url) => {
+          document.getElementById('foto'+i).src = url;
+        })
         document.getElementById('dataStudent').innerHTML += `
                     <div class="modal fade" id="staticBackdrop${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -33,7 +35,7 @@
                                 <div class="modal-body d-flex justify-content-center">
                                     <div class="card swiper-slide" style="width: 70%;">
                                         <div class="card-img m-auto d-flex justify-content-center align-items-center">
-                                            <img src="../img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+                                            <img src="" class="card-img-top m-2 img-thumbnail" alt="" id="foto${i}">
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Ketua Umum BANTENG</h5>

@@ -11,15 +11,16 @@
 
 		firebase.initializeApp(firebaseConfig);
 
+    const storage = firebase.storage();
 		const db = firebase.firestore();
 
-
-
 		async function getData() {
-    
-      const dosen = await db.collection("dosen").get();
-
-			dosen.docs.forEach((dsn, i) => {
+    const dosen = await db.collection("dosen").get();
+    dosen.docs.forEach((dsn, i) => {
+      const storageRef = storage.ref().child(`dosen/${dsn.data().nama}.jpg`);
+      storageRef.getDownloadURL().then((url) => {
+        document.getElementById('foto'+i).src = url;
+      })
 				document.getElementById('dataDosen').innerHTML += `
                   <div class="modal fade" id="staticBackdrop${i}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog rounded bg-transparent p-0">
@@ -30,7 +31,7 @@
                       <div class="modal-body d-flex justify-content-center">
                         <div class="card swiper-slide" style="width: 70%;">
                           <div class="card-img m-auto d-flex justify-content-center align-items-center">
-                              <img src="../img/hero.jpg" class="card-img-top m-2 img-thumbnail" alt="">
+                              <img src="" alt="" id="foto${i}" class="card-img-top m-2 img-thumbnail">
                           </div>
                           <div class="card-body">
                               <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
@@ -63,9 +64,8 @@
 		};
 		getData();
 
-    // db.collection('dosen').where('kelamin', 'in', ['perempuan']).get().then(querySnapshot => {
-    //   document.getElementById('testSex').innerHTML = querySnapshot.size;
-    // })
+    
+    
 
     // TOTAL DOSEN
     function totalDosen() {
