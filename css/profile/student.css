@@ -1,5 +1,5 @@
 body {
-    background-color: #ebedf1;
+    background-color: #f5f5fa;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -62,21 +62,23 @@ footer p {
         gap: 0;
     }
 }
+
 @media only screen and (max-width: 576px) {
     .dash {
         width: 70%;
         justify-content: space-around;
     }
-    .dash p{
+
+    .dash p {
         font-size: 10px;
     }
 
     .dash i {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }
 
     .dropdown-nav-mhs {
-    display: block;
+        display: block;
     }
 
     .nav-mhs {

@@ -1,4 +1,9 @@
-.kurikulum-img img{
+body {
+    background-color: #f5f5fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kurikulum-img img {
     width: 100px;
     height: 60px;
 }

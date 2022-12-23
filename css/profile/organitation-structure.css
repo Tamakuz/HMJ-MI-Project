@@ -1,14 +1,7 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 14px;
-}
 
 body {
-    background: #f6f9fc;
-    font-family: "Open Sans", sans-serif;
+    background-color: #f5f5fa;
+    font-family: 'Poppins', sans-serif;
     color: #525f7f;
 }
 
@@ -221,6 +214,7 @@ h2 {
     .timeline__event {
         flex-direction: column;
         align-self: center;
+        width: 100%;
     }
 
     .timeline__event__content {
