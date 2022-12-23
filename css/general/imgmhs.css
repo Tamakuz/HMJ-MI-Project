@@ -1,0 +1,5 @@
+.img-mahasiswa {
+  image-rendering: optimizeSpeed;
+  object-fit: cover;
+  background-position: center;
+}

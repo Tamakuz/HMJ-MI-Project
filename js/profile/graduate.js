@@ -35,7 +35,7 @@
                                 <div class="modal-body d-flex justify-content-center">
                                     <div class="card swiper-slide" style="width: 70%;">
                                         <div class="card-img m-auto d-flex justify-content-center align-items-center">
-                                            <img src="" class="card-img-top m-2 img-thumbnail" alt="" id="foto${i}">
+                                            <img src="" class="card-img-top m-2 img-thumbnail img-mahasiswa" alt="" id="foto${i}">
                                         </div>
                                         <div class="card-body">
                                             <h5 class="card-title text-center">Ketua Umum BANTENG</h5>
